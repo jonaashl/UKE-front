@@ -1,11 +1,17 @@
-import logo from "./logo.svg"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./App.css"
+import MainView from "./views/MainView"
 
+// Routing for potential expanding on the application.
 function App() {
     return (
-        <div className="App">
-            <h1>Lets go!</h1>
-        </div>
+        <BrowserRouter>
+            <div className="app">
+                <Routes>
+                    <Route path="/" element={<MainView />} />
+                </Routes>
+            </div>
+        </BrowserRouter>
     )
 }
 
