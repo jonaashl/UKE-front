@@ -2,8 +2,8 @@ import { useState } from "react"
 import InputText from "../components/InputText"
 import InputSubmitButton from "../components/InputSubmitButton"
 import ConvertedResultDisplay from "../components/ConvertedResultDisplay"
-import Footer from "../components/Footer"
-import Header from "../components/Header"
+import Footer from "../components/footer"
+import Header from "../components/header"
 
 const MainView = () => {
     const [romanNumeral, setRomanNumeral] = useState("")
@@ -24,18 +24,18 @@ const MainView = () => {
             </div>
             <div className="osg-grid">
                 <div className="osg-grid__column--12">
-                    <div className="osg-padding-3 osg-text--align-center osg-color-bg-beige-dark">
-                        <ConvertedResultDisplay value={normalNumber} />
-                    </div>
-                </div>
-                <div className="osg-grid__column--12">
                     <div className="osg-padding-3 osg-text--align-center osg-color-bg-yellow">
                         <InputText value={romanNumeral} onChange={handleInputChange} />
                     </div>
                 </div>
                 <div className="osg-grid__column--12">
-                    <div className="osg-padding-3 osg-text--align-center osg-color-bg-blue-light">
+                    <div className="osg-padding-3 osg-text--align-center osg-color-bg-white">
                         <InputSubmitButton label="Kalkuler" onClick={handleSubmit} />
+                    </div>
+                </div>
+                <div className="osg-grid__column--12">
+                    <div className="osg-padding-3 osg-text--align-center osg-color-bg-beige-dark">
+                        <ConvertedResultDisplay value={normalNumber} />
                     </div>
                 </div>
             </div>
