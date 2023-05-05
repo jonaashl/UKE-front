@@ -1,5 +1,5 @@
 const ConvertedResultDisplay = (props) => {
-    return <div>{props.value ? `Normalt nummer: ${props.value}` : "Skriv inn et romertall og klikk på knappen"}</div>
+    return <div>{props.value ? `Normalt nummer: ${props.value}` : "1"}</div>
 }
 
 export default ConvertedResultDisplay
