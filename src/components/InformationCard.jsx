@@ -2,7 +2,7 @@ const InformationCard = () => {
     return (
         <div className="osg-landscape-card osg-landscape-card--no-image">
             <div className="osg-landscape-card__content">
-                <h2 className="osg-landscape-card__heading">Velkommen!</h2>
+                <h1 className="osg-landscape-card__heading">Velkommen!</h1>
                 <p className="osg-landscape-card__text">
                     Dette er et lite program som konverterer romertall til vanlige tall!
                 </p>
