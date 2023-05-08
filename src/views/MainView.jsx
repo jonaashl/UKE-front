@@ -15,7 +15,7 @@ const MainView = () => {
         setRomanNumeral(event.target.value)
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
         if (romanNumeral.trim().length === 0) {
             alert("Input feltet er tomt!")
             console.log("Input field is empty")
@@ -25,8 +25,23 @@ const MainView = () => {
                 alert("Ugyldige tegn i input feltet!")
                 console.log("Invalid characters in input field")
             } else {
-                const numberValue = RomanNumeralConverter({ romanNumeral })
-                setNormalNumber(numberValue)
+                // FRONTEND LOGIC FOR MANDATORY TASK - DO NOT REMOVE
+                // const numberValue = RomanNumeralConverter({ romanNumeral })
+                // setNormalNumber(numberValue)
+                try {
+                    const response = await fetch("https://localhost:7284/RomanNumeral", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({ Numeral: romanNumeral }),
+                    })
+                    const normalNumberValue = await response.json()
+                    setNormalNumber(normalNumberValue)
+                } catch (error) {
+                    console.log(error)
+                    alert("en feil oppstod med backenden")
+                }
             }
         }
     }
