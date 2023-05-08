@@ -8,7 +8,8 @@ const InputText = (props) => {
                 <input
                     className="osg-input__input"
                     type="text"
-                    placeholder="Skriv inn et romersk tall! ex: VXI"
+                    maxLength={20}
+                    placeholder="Skriv inn et romersk tall! ex: XIV"
                     value={props.value}
                     onChange={props.onChange}
                 />
