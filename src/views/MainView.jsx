@@ -2,8 +2,9 @@ import { useState } from "react"
 import InputText from "../components/InputText"
 import InputSubmitButton from "../components/InputSubmitButton"
 import ConvertedResultDisplay from "../components/ConvertedResultDisplay"
-import Footer from "../components/footer"
-import Header from "../components/header"
+import Footer from "../components/Footer"
+import Header from "../components/Header"
+import RomanNumeralConverter from "../components/RomanNumeralConverter"
 
 const MainView = () => {
     const [romanNumeral, setRomanNumeral] = useState("")
@@ -14,7 +15,8 @@ const MainView = () => {
     }
 
     const handleSubmit = () => {
-        // Backend request for logic handling
+        const numberValue = RomanNumeralConverter({ romanNumeral })
+        setNormalNumber(numberValue)
     }
 
     return (
