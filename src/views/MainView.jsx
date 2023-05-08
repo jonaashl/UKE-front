@@ -18,12 +18,12 @@ const MainView = () => {
     const handleSubmit = () => {
         if (romanNumeral.trim().length === 0) {
             alert("Input feltet er tomt!")
-            console.log("Input field is empty");
+            console.log("Input field is empty")
         } else {
             const regex = /^[IVXLCDM\s]*$/
             if (!regex.test(romanNumeral)) {
                 alert("Ugyldige tegn i input feltet!")
-                console.log("Invalid characters in input field");
+                console.log("Invalid characters in input field")
             } else {
                 const numberValue = RomanNumeralConverter({ romanNumeral })
                 setNormalNumber(numberValue)
@@ -46,17 +46,17 @@ const MainView = () => {
                     </div>
                 </div>
                 <div className="osg-grid__column--12">
-                    <div className="osg-padding-3 osg-text--align-center osg-color-bg-white">
+                    <div className="osg-padding-3 osg-text--align-center osg-color-bg-yellow">
                         <InputSubmitButton label="Kalkuler" onClick={handleSubmit} />
                     </div>
                 </div>
-                <div className="osg-grid__column--12">
-                    <div className="osg-padding-3 osg-text--align-center osg-color-bg-beige-dark">
+                <div className="osg-grid__column--12 osg-margin-bottom-5">
+                    <div className="osg-padding-3 osg-text--align-center osg-color-bg-blue-light">
                         <ConvertedResultDisplay value={normalNumber} />
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="bottom">
                 <Footer />
             </div>
         </div>
