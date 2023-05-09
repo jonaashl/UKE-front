@@ -1,4 +1,4 @@
-# Caseoppgave for UKE
+# Caseoppgave for UKE (frontend)
 
 ## Quickstart
 
@@ -15,6 +15,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ---
 
+## Docker
+
+```
+docker build -t jonashl/uke-front .
+rocker run -p 3000:3000 jonashl/uke-front
+```
+
+---
+
 ## Generelt om prosjektet
 
 Veldig morsom oppgave!
@@ -23,7 +32,7 @@ Det har vært vanskelig å holde alle optional tasks i hver sin feature branch, 
 
 Kun skrevet tester for backend, har svært lite erfaring med frontend unit-testing.
 
-React med komponenter bygget for Vue har vært.. interessant..
+React med Oslo kommune styleguide har vært.. utfordrende
 
 ---
 
@@ -32,7 +41,7 @@ React med komponenter bygget for Vue har vært.. interessant..
 -   Accessibility / Semantic HTML
 -   Design
 -   Logikken for romertall konvertering tar ikke hensyn til om brukeren inputer et - "feilformatert" romertall.
--   Frontend build optional task. Dette skjønte jeg dessverre ikke hvordan man skulle gjøre
+-   Frontend build optional task. Dette skjønte jeg dessverre ikke hvordan man skulle gjøre dette
 
 ---
 
