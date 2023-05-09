@@ -1,6 +1,8 @@
-## Caseoppgave for UKE
+# Caseoppgave for UKE
 
-# Quickstart
+## Quickstart
+
+CD inn i UKE-front dersom du ikke er i directoriet.
 
 ```
 cd UKE-front
@@ -8,21 +10,30 @@ npm install
 npm start
 ```
 
-### Generelle tanker
-
-Jeg har ikke vært så flink til å holde alle features i hver since branches, men jeg prøvde.. 🤷‍♂️ noen ting ble dessverre med på feil branch
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ---
 
-# Getting Started with Create React App
+## Generelt om prosjektet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Veldig morsom oppgave!
 
-## Available Scripts
+Det har vært vanskelig å holde alle optional tasks i hver sin feature branch, men jeg har prøvd mitt beste!
 
-In the project directory, you can run:
+Kun skrevet tester for backend, har svært lite erfaring med frontend unit-testing.
 
-### `npm start`
+React med komponenter bygget for Vue har vært.. interessant..
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
+
+### Forbedringer
+
+-   Accessibility / Semantic HTML
+-   Design
+-   Logikken for romertall konvertering tar ikke hensyn til om brukeren inputer et - "feilformatert" romertall.
+-   Frontend build optional task. Dette skjønte jeg dessverre ikke hvordan man skulle gjøre
+
+---
+
+License: MIT
