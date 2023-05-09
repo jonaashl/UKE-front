@@ -14,6 +14,7 @@ const MainView = () => {
         setRomanNumeral(event.target.value)
     }
 
+    // handling what to do with the input from the user. Also filters user input.
     const handleSubmit = async () => {
         if (romanNumeral.trim().length === 0) {
             alert("Input feltet er tomt!")
