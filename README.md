@@ -41,7 +41,7 @@ React med Oslo kommune styleguide har vært.. utfordrende
 -   Accessibility / Semantic HTML
 -   Design
 -   Logikken for romertall konvertering tar ikke hensyn til om brukeren inputer et - "feilformatert" romertall.
--   Frontend build optional task. Dette skjønte jeg dessverre ikke hvordan man skulle gjøre dette
+-   Frontend build optional task. Skjønte jeg dessverre ikke hvordan man skulle gjøre dette
 
 ---
 
