@@ -15,7 +15,7 @@ const MainView = () => {
     }
 
     // handling what to do with the input from the user. Also filters user input.
-    const handleSubmit = async () => {
+    const handleSubmit = async (romanNumeral) => {
         if (romanNumeral.trim().length === 0) {
             alert("Input feltet er tomt!")
             console.log("Input field is empty")
@@ -62,7 +62,7 @@ const MainView = () => {
                 </div>
                 <div className="osg-grid__column--12">
                     <div className="osg-padding-3 osg-text--align-center osg-color-bg-yellow">
-                        <InputSubmitButton label="Kalkuler" onClick={handleSubmit} />
+                        <InputSubmitButton label="Kalkuler" onClick={() => handleSubmit(romanNumeral)} />
                     </div>
                 </div>
                 <div className="osg-grid__column--12 osg-margin-bottom-5">
