@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./App.css"
-import MainView from "./views/MainView"
+import MainView from "./containers/MainView"
 
 // Routing for potential expanding on the application.
 function App() {
