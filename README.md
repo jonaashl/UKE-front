@@ -38,10 +38,11 @@ React med Oslo kommune styleguide har vært.. utfordrende
 
 ### Forbedringer
 
+-   Flytte API-kall til en egen funksjon, generell refaktorering for scalability
 -   Accessibility / Semantic HTML
 -   Design
 -   Logikken for romertall konvertering tar ikke hensyn til om brukeren inputer et - "feilformatert" romertall.
--   Frontend build optional task. Skjønte jeg dessverre ikke hvordan man skulle gjøre dette
+-   Frontend build optional task..
 
 ---
 
